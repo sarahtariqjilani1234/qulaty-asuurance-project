@@ -1,0 +1,68 @@
+{
+  "id": "fc06c415-5970-43ca-88b7-c1a2eeb3150b",
+  "version": "2.0",
+  "name": "project",
+  "url": "https://www.airblue.com",
+  "tests": [{
+    "id": "e09d2a6c-58df-452b-a352-f3332aa16442",
+    "name": "test",
+    "commands": [{
+      "id": "2e6a1f80-b365-4c06-b87c-0f00c7d33f4c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00b8c835-d1db-4a5e-aca9-48391911bbb3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7789966-b8be-45e0-bc39-aff7d5bffdea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.one-way span",
+      "targets": [
+        ["css=.one-way span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/form/ul/li[2]/label/span", "xpath:idRelative"],
+        ["xpath=//li[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e723e425-7303-41f2-a75b-8bd44487e79f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/form/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb2ec5f7-29b7-4a6d-aa7b-57bc2becfa77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flight-date:nth-child(3) strong",
+      "targets": [
+        ["css=.flight-date:nth-child(3) strong", "css:finder"],
+        ["xpath=//div[@id='trip_1']/div/div[2]/ul/li[3]/label/strong", "xpath:idRelative"],
+        ["xpath=//li[3]/label/strong", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e4852b85-2675-4d71-8cd2-6011c2fda759",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e09d2a6c-58df-452b-a352-f3332aa16442"]
+  }],
+  "urls": ["https://www.airblue.com/"],
+  "plugins": []
+}
